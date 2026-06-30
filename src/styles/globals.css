@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+:root {
+  --bg:#f2f4fb;--bg2:#ffffff;--bg3:#e8ebf5;--card:#ffffff;
+  --text:#0a0f2e;--text2:#3d4470;--muted:#8087b0;--border:rgba(10,15,60,0.09);
+  --teal:#00b88a;--teal2:#009e76;--tealBg:rgba(0,184,138,0.10);--tealBorder:rgba(0,184,138,0.25);
+  --accent:#5b4ff5;--accentBg:rgba(91,79,245,0.10);
+  --lime:#5ec400;--shadow:0 8px 32px rgba(10,15,60,0.10);--shadow-sm:0 2px 12px rgba(10,15,60,0.07);
+}
+.dark {
+  --bg:#07091a;--bg2:#0d1025;--bg3:#131630;--card:#111428;
+  --text:#eef0ff;--text2:#9ca3cc;--muted:#6b72a0;--border:rgba(255,255,255,0.08);
+  --teal:#00d4a0;--teal2:#00b389;--tealBg:rgba(0,212,160,0.10);--tealBorder:rgba(0,212,160,0.25);
+  --accent:#7b6fff;--accentBg:rgba(123,111,255,0.12);
+  --lime:#a8ff3e;--shadow:0 8px 32px rgba(0,0,0,0.40);--shadow-sm:0 2px 12px rgba(0,0,0,0.30);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.leaflet-container{font-family:'Montserrat',sans-serif!important;z-index:0}
+.leaflet-popup-content-wrapper{border-radius:16px!important;background:var(--card)!important;
+  color:var(--text)!important;border:1px solid var(--border)!important;
+  box-shadow:var(--shadow)!important;font-family:'Montserrat',sans-serif!important}
+.leaflet-popup-tip{background:var(--card)!important}
